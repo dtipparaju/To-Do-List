@@ -8,34 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var toDoItems =
-
-            [ToDoItem(priority: "High", description: "Take out trash", dueDate: Date()),
-             ToDoItem(priority: "Medium", description: "Pick up clothes", dueDate: Date()),
-             ToDoItem(priority: "Low", description: "Eat a donut", dueDate: Date())]
+    @State private var things = ["First Thing", "Second Thing", "Third Thing", "Fourth Thing", "Fifth Thing"]
     var body: some View {
         NavigationView {
             List {
-                ForEach(toDoItems) { item in
-                    HStack {
-                        VStack {
-                            Text(item.priority)
-                                .font(.headline)
-                            Text(item.description)
-                        }
-                        
-                        Spacer()
-                        Text(item.dueDate, style: .date)
-                    }
+                ForEach(things, id: \.self) { thing in
+                    Text(thing)
                 }
-                .onMove { indices, newOffset in
-                    toDoItems.move(fromOffsets: indices, toOffset: newOffset)
+                .onMove {indices, newOffset in
+                    things.move(fromOffsets: indices, toOffset: newOffset)
                 }
                 .onDelete { IndexSet in
-                    toDoItems.remove(atOffsets: IndexSet)
+                    things.remove(atOffsets: IndexSet)
                 }
             }
-            .navigationBarTitle("To-Do List", displayMode: . inline)
+            .navigationBarTitle("Things", displayMode: .inline)
             .navigationBarItems(leading: EditButton())
         }
     }
