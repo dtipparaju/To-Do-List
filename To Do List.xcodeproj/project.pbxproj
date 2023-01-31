@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F92CAF9E298032090015785C /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92CAF9D298032090015785C /* AddItemView.swift */; };
+		F92CAFA02989614E0015785C /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92CAF9F2989614E0015785C /* ToDoList.swift */; };
 		F95D876A297EDFBC00D963CC /* To_Do_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D8769297EDFBC00D963CC /* To_Do_ListApp.swift */; };
 		F95D876C297EDFBC00D963CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D876B297EDFBC00D963CC /* ContentView.swift */; };
 		F95D876E297EDFBE00D963CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95D876D297EDFBE00D963CC /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		F92CAF9D298032090015785C /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		F92CAF9F2989614E0015785C /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		F95D8766297EDFBC00D963CC /* To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95D8769297EDFBC00D963CC /* To_Do_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListApp.swift; sourceTree = "<group>"; };
 		F95D876B297EDFBC00D963CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				F95D8769297EDFBC00D963CC /* To_Do_ListApp.swift */,
 				F95D876B297EDFBC00D963CC /* ContentView.swift */,
+				F92CAF9F2989614E0015785C /* ToDoList.swift */,
 				F92CAF9D298032090015785C /* AddItemView.swift */,
 				F95D876D297EDFBE00D963CC /* Assets.xcassets */,
 				F95D876F297EDFBE00D963CC /* Preview Content */,
@@ -263,6 +266,7 @@
 				F95D876C297EDFBC00D963CC /* ContentView.swift in Sources */,
 				F92CAF9E298032090015785C /* AddItemView.swift in Sources */,
 				F95D876A297EDFBC00D963CC /* To_Do_ListApp.swift in Sources */,
+				F92CAFA02989614E0015785C /* ToDoList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
